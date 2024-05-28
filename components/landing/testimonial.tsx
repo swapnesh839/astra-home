@@ -5,33 +5,34 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import assert from 'assert';
+import user from "../../public/img/user.png"
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 const userData = [
   {
     username: "john_doe",
     userReview: "Great product, highly recommended! It exceeded my expectations in every way.",
-    userImage: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+    userImage: user
   },
   {
     username: "jane_smith",
     userReview: "Excellent service and fantastic quality. Will definitely buy again.",
-    userImage: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+    userImage: user
   },
   {
     username: "sam_wilson",
     userReview: "Good value for money. The item arrived on time and as described.",
-    userImage: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+    userImage: user
   },
   {
     username: "emma_jones",
     userReview: "Very satisfied with my purchase. The customer support was very helpful.",
-    userImage: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+    userImage: user
   },
   {
     username: "liam_brown",
     userReview: "The product works perfectly. Great build quality and easy to use.",
-    userImage: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+    userImage: user
   }
 ];
 

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { number } from "zod";
+import slider from "../../public/img/slider-1.png"
 
 const Slider = [
   {
@@ -137,7 +138,7 @@ const WordsFromOurCustomers:React.FC = () => {
             </div>
             <div className="">
                 <Image
-                    src="/img/slider-1.png"
+                    src={slider}
                     width={300}
                     height={400}
                     className="w-full h-[400px]"

@@ -53,6 +53,8 @@ const TrustedCustomer = () => {
                     <div className="flex items-center justify-center p-3 h-[100px]">
                       <Image
                         src={index.logos}
+                        width={100}
+                        height={100}
                         alt="Picture of the author"
                         className="w-full lg:p-3 sm:p-16"
                       />

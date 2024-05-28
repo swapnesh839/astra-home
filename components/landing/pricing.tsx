@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import check from "../../public/img/check.png"
 const Pricing = () => {
   const [show, setShow] = useState(true)
   return (
@@ -39,7 +40,7 @@ const Pricing = () => {
               <div className="w-full lg:w-[60%] mx-auto p-6 flex flex-col gap-8 lg:gap-0 text-lg font-normal text-start">
                 <div className="flex py-4">
                   <Image
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVR4nO2ZX0rDQBCHcxBFEMQHvYrdSVH6oOcoM7QPnkeKRxJ6gEpmg74oRlJaoTFJs38y04f9wT4UQvN9s5PsQLIsJSUl5WSzMJ/nBLwisJbAVkJrjdPisskyvytvnOHR2I0geNUFj6acIfAXGX4eLLCr/OnAw+66oRKn0DbYhAdbbX/n5e0QgYObZMLBvHxowpPhb8yLx0F/oCmAofCaAhgDXksAY8FrCGBMeGkBjA0vKYBjwEsJ4FjwEgJdhxSacvbv2pZDTlXApfKL6fsFgn0bRcB5QvSoPIFdexXwmEA9VNVVI+CnMStPvh3QJ7CFP1K9kMrX2Vc+ukA9CbqA+MBHeQZ7d2Bi79taoa2dfF+VNKbAUImQ9zyNLXBMIvSQIgmB3v527Hk1gc6dCBwPSFKgV8JztiFpgVaJgMGMNAQOJAKnStIS+HuwHR7YthDwj5pAjJDmDsQIJQFIO6DeQrbzZJVexhYeAvyqDg77xStngeWErxU+cFTNVTMsp3yV+WSef5yR4RcEy+LgUN+TV97wKSkpKZlEfgHIi9OvTBzqLgAAAABJRU5ErkJggg=="
+                    src={check}
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
@@ -47,7 +48,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex py-4">
                   <Image
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVR4nO2ZX0rDQBCHcxBFEMQHvYrdSVH6oOcoM7QPnkeKRxJ6gEpmg74oRlJaoTFJs38y04f9wT4UQvN9s5PsQLIsJSUl5WSzMJ/nBLwisJbAVkJrjdPisskyvytvnOHR2I0geNUFj6acIfAXGX4eLLCr/OnAw+66oRKn0DbYhAdbbX/n5e0QgYObZMLBvHxowpPhb8yLx0F/oCmAofCaAhgDXksAY8FrCGBMeGkBjA0vKYBjwEsJ4FjwEgJdhxSacvbv2pZDTlXApfKL6fsFgn0bRcB5QvSoPIFdexXwmEA9VNVVI+CnMStPvh3QJ7CFP1K9kMrX2Vc+ukA9CbqA+MBHeQZ7d2Bi79taoa2dfF+VNKbAUImQ9zyNLXBMIvSQIgmB3v527Hk1gc6dCBwPSFKgV8JztiFpgVaJgMGMNAQOJAKnStIS+HuwHR7YthDwj5pAjJDmDsQIJQFIO6DeQrbzZJVexhYeAvyqDg77xStngeWErxU+cFTNVTMsp3yV+WSef5yR4RcEy+LgUN+TV97wKSkpKZlEfgHIi9OvTBzqLgAAAABJRU5ErkJggg=="
+                    src={check}
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
@@ -55,7 +56,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex py-4">
                   <Image
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVR4nO2ZX0rDQBCHcxBFEMQHvYrdSVH6oOcoM7QPnkeKRxJ6gEpmg74oRlJaoTFJs38y04f9wT4UQvN9s5PsQLIsJSUl5WSzMJ/nBLwisJbAVkJrjdPisskyvytvnOHR2I0geNUFj6acIfAXGX4eLLCr/OnAw+66oRKn0DbYhAdbbX/n5e0QgYObZMLBvHxowpPhb8yLx0F/oCmAofCaAhgDXksAY8FrCGBMeGkBjA0vKYBjwEsJ4FjwEgJdhxSacvbv2pZDTlXApfKL6fsFgn0bRcB5QvSoPIFdexXwmEA9VNVVI+CnMStPvh3QJ7CFP1K9kMrX2Vc+ukA9CbqA+MBHeQZ7d2Bi79taoa2dfF+VNKbAUImQ9zyNLXBMIvSQIgmB3v527Hk1gc6dCBwPSFKgV8JztiFpgVaJgMGMNAQOJAKnStIS+HuwHR7YthDwj5pAjJDmDsQIJQFIO6DeQrbzZJVexhYeAvyqDg77xStngeWErxU+cFTNVTMsp3yV+WSef5yR4RcEy+LgUN+TV97wKSkpKZlEfgHIi9OvTBzqLgAAAABJRU5ErkJggg=="
+                    src={check}
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
@@ -63,7 +64,7 @@ const Pricing = () => {
                 </div>
                 <div className="flex py-4">
                   <Image
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVR4nO2ZX0rDQBCHcxBFEMQHvYrdSVH6oOcoM7QPnkeKRxJ6gEpmg74oRlJaoTFJs38y04f9wT4UQvN9s5PsQLIsJSUl5WSzMJ/nBLwisJbAVkJrjdPisskyvytvnOHR2I0geNUFj6acIfAXGX4eLLCr/OnAw+66oRKn0DbYhAdbbX/n5e0QgYObZMLBvHxowpPhb8yLx0F/oCmAofCaAhgDXksAY8FrCGBMeGkBjA0vKYBjwEsJ4FjwEgJdhxSacvbv2pZDTlXApfKL6fsFgn0bRcB5QvSoPIFdexXwmEA9VNVVI+CnMStPvh3QJ7CFP1K9kMrX2Vc+ukA9CbqA+MBHeQZ7d2Bi79taoa2dfF+VNKbAUImQ9zyNLXBMIvSQIgmB3v527Hk1gc6dCBwPSFKgV8JztiFpgVaJgMGMNAQOJAKnStIS+HuwHR7YthDwj5pAjJDmDsQIJQFIO6DeQrbzZJVexhYeAvyqDg77xStngeWErxU+cFTNVTMsp3yV+WSef5yR4RcEy+LgUN+TV97wKSkpKZlEfgHIi9OvTBzqLgAAAABJRU5ErkJggg=="
+                    src={check}
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
