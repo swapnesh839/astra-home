@@ -64,11 +64,11 @@ const Sidebar = ({
             />
           </svg>
         </button>
-        <ul className="hidden md:flex sm:flex flex-col gap-y-2">
+        <ul className="md:flex sm:flex flex-col gap-y-2">
           {Menu.map((i) => {
             if (!i?.innersection) {
               return (
-                <li key={i.id}>
+                <li key={i.id} className="my-3">
                   <Link className="hover:text-purple-700 group" href={i.url}>
                     <p>{i.name}</p>
                   </Link>

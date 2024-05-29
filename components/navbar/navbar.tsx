@@ -98,7 +98,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         </button>
                       </div>
                       {isOpen && <div 
-                       className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+                       className={`absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
                         <div className="py-1" role="none">
                           {
