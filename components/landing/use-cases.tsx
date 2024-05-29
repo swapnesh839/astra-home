@@ -112,7 +112,7 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section className="pb-20">
+    <section className="pb-20" id="Usecases">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-1 pb-14 mx-auto">
           <h2 className="w-full text-center lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">

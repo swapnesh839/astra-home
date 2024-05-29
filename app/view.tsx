@@ -12,7 +12,7 @@ import WordsFromOurCustomers from "@/components/landing/words-from-0ur-customers
 
 const ViewPage = () => {
     return (
-        <>
+        <div className="scroll-smooth">
             <Banner />
             <HealthyMachines />
             <TrustedCustomer />
@@ -24,7 +24,7 @@ const ViewPage = () => {
             <AWellDesigned />
             <ContactUs />
             <Pricing />            
-        </>
+        </div>
     );
 }
 export default ViewPage;

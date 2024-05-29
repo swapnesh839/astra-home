@@ -25,11 +25,12 @@ const logosImg = [
   {
     id: 2,
     logos: "/img/logo-3.png",
-  },
-  {
-    id: 3,
-    logos: "/img/logo-1.png",
-  },
+  }
+  // ,
+  // {
+  //   id: 3,
+  //   logos: "/img/logo-1.png",
+  // },
 ];
 
 const TrustedCustomer = () => {

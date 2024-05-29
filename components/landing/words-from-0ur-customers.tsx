@@ -115,7 +115,7 @@ const Slider = [
 const WordsFromOurCustomers:React.FC = () => {
 
   return (
-    <section className="py-14">
+    <section className="py-14" id="Features">
       <div className="container mx-auto px-7 mt-12 h-full">
         <h2 className="w-full lg:text-6xl text-5xl font-normal !leading-[60px] text-center">
           Words From Our Customers 
