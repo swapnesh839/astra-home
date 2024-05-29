@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-1">
           <div className="lg:col-span-9 col-span-12">
-            <h1 className="w-full lg:text-7xl md:text-5xl sm:text-2xl text-xl font-light">
+            <h1 className="w-full lg:text-7xl md:text-5xl text-5xl font-light !leading-[60px]">
               Automate post sales workflows, processes
               <br className="hidden lg:block md:hidden sm:hidden" /> and tasks
             </h1>

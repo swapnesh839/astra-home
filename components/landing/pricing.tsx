@@ -8,7 +8,7 @@ const Pricing = () => {
     <section className="pt-14 bg-gray-100 pb-20">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-1">
-          <h2 className="py-11 lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px] text-[#000000] mx-auto">
+          <h2 className="py-11 lg:text-5xl text-4xl font-normal !leading-[60px] text-[#000000] mx-auto">
             Pricing
           </h2>
           <div className="mx-auto text-center">

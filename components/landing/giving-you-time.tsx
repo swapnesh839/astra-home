@@ -7,7 +7,7 @@ const GivingYouTime = () => {
             <p className="text-purple-600 font-semibold">
               GIVING YOU TIME TO FOCUS ON THE REST
             </p>
-            <h2 className="py-11 lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px] text-gray-700">
+            <h2 className="py-11 lg:text-6xl text-5xl font-normal !leading-[60px] text-gray-700">
               Better maintenance, flexible solution with robust data insight
             </h2>
             <p className="font-normal text-gray-700 text-base lg:text-lg tracking-wider pb-11">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "./button";
 
 const Sidebar = ({
     isOpen,
@@ -46,6 +47,9 @@ const Sidebar = ({
             <Link href="/contacts" onClick={toggle}>
               <p>Contacts</p>
             </Link>
+          </li>
+          <li className="py-2">
+            <Button/>
           </li>
         </ul>
       </div>

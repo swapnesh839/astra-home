@@ -117,7 +117,7 @@ const WordsFromOurCustomers:React.FC = () => {
   return (
     <section className="py-14">
       <div className="container mx-auto px-7 mt-12 h-full">
-        <h2 className="w-full lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px] text-center">
+        <h2 className="w-full lg:text-6xl text-5xl font-normal !leading-[60px] text-center">
           Words From Our Customers 
         </h2>
         <div className="relative w-full z-10">

@@ -166,7 +166,7 @@ const UseCases = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-0 lg:px-72 md:px-20 sm:px-0 px-0 pt-20">
-          <div className="lg:flex md:flex sm:block block justify-between items-end py-14 border-t border-b border-gray-500">
+          <div className="lg:flex md:flex flex justify-between items-end py-14 border-t border-b border-gray-500">
             <div>
               <p className="text-base font-light mb-2">More than</p>
               <div className="flex items-center">

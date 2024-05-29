@@ -15,23 +15,29 @@ const Logo = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", updateWidth);
+   window.addEventListener("resize", updateWidth);
     updateWidth();
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
   }, []);
 
   // change between the logo and the button when the user scrolls
   const [showButton, setShowButton] = useState(false);
 
   const changeNavButton = () => {
-    if (window.scrollY >= 400 && window.innerWidth < 768) {
-      setShowButton(true);
-    } else {
-      setShowButton(false);
-    }
+    // if (window.scrollY >= 400 && window.innerWidth < 768) {
+    //   setShowButton(true);
+    // } else {
+    //   setShowButton(false);
+    // }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavButton);
+    return () => {
+      window.removeEventListener("scroll",changeNavButton);
+    };
   }, []);
 
   return (

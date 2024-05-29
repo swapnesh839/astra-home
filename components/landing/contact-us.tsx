@@ -13,7 +13,7 @@ const ContactUs = () => {
             <h4 className="text-lg lg:text-lg font-normal text-purple-500 py-11">
               Help your team to give their best, contact us now
             </h4>
-            <p className="text-lg font-normal text-gray-600">
+            <p className="text-sm  font-normal text-gray-600">
               More than ever, service and support departments are at the
               forefront of a company’s success. Customer success depends on
               synergizing customer service representatives with the rest of the

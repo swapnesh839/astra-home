@@ -37,7 +37,7 @@ const Businesses = () => {
             />
           </div>
           <div className="text-[#FFFFFF]">
-            <h3 className="w-full lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
+            <h3 className="w-full lg:text-6xl text-5xl font-normal !leading-[60px]">
               Businesses should be on everytime
             </h3>
             <p className="py-11">
@@ -48,10 +48,17 @@ const Businesses = () => {
               experience as if a head or a lead is talking to them even in their
               absence.
             </p>
-            <div className="">
+            <div className="lg:inline-block hidden">
               {buttons.map((index) => (
                 <Button key={index.label} className="w-[185px] me-3 mb-3 px-5 py-2 bg-orange-400 text-black mx-auto transtion ease-in-out duration-500 rounded-full hover:bg-white">{index.label}</Button>
               ))}
+            </div>
+            <div className="lg:hidden flex flex-col p-3">
+              {/* <div className="m-auto bg-blue-500 "> */}
+              {buttons.map((index) => (
+                <Button key={index.label} className="w-2/3 mb-3  bg-orange-400 text-black mx-auto transtion ease-in-out duration-500 rounded-full hover:bg-white">{index.label}</Button>
+              ))}
+              {/* </div> */}
             </div>
           </div>
         </div>

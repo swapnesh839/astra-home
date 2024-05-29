@@ -1,17 +1,36 @@
+"use Client"
 import Link from "next/link";
 import Logo from "./logo";
 import Button from "./button";
+import { useEffect, useState } from "react";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
+  const [Sticky, setSticky] = useState(true)
+  const changeNavButton = () => {
+    if (window.innerWidth >= 700) {
+      if (window.scrollY >= 3900 && window.scrollY < 5000) {
+        setSticky(false);
+      } else {
+        setSticky(true);
+      }
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavButton);
+    return () => {
+      window.removeEventListener("scroll", changeNavButton);
+    };
+  }, []);
   const Menu = [
-    { id:0, name: "Features", url: "/Features" },
-    { id:1, name: "Usecases", url: "/Usecases" },
-    { id:2, name: "Pricing", url: "/Pricing" },
-    { id:3, name: "Solutions", url: "/Solutions" },
+    { id: 0, name: "Features", url: "/Features" },
+    { id: 1, name: "Usecases", url: "/Usecases" },
+    { id: 2, name: "Pricing", url: "/Pricing" },
+    { id: 3, name: "Solutions", url: "/Solutions" },
   ];
   return (
     <>
-      <div className="w-full h-20 bg-gray-100 sticky top-0 z-20">
+      {/* {window.innerWidth} */}
+      <div className={`w-full h-20 bg-gray-100 ${Sticky && "sticky top-0"} z-20`}>
         <div className="container mx-auto px-7 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
