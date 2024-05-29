@@ -60,7 +60,7 @@ const TrustedCustomer = () => {
     ]
   };
   return (
-    <div className='w-ful py-20 bg-[#F3F4F6]'>
+    <div className='w-ful py-28 bg-[#F3F4F6]'>
       <div className="grid grid-cols-1 text-center mb-14">
         <h2 className="w-full lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
           Trusted Customers
