@@ -7,7 +7,7 @@ const GivingYouTime = () => {
             <p className="text-purple-600 font-semibold">
               GIVING YOU TIME TO FOCUS ON THE REST
             </p>
-            <h2 className="py-11 lg:text-6xl text-5xl font-normal !leading-[60px] text-gray-700">
+            <h2 className="py-11 md:text-6xl text-5xl font-normal !leading-[60px] text-gray-700">
               Better maintenance, flexible solution with robust data insight
             </h2>
             <p className="font-normal text-gray-700 text-base lg:text-lg tracking-wider pb-11">
@@ -24,27 +24,27 @@ const GivingYouTime = () => {
             <div className="grid grid-cols-3 gap-0">
               <div></div>
               <div></div>
-              <div className="bg-purple-600 text-white text-sm p-2 lg:p-8 lg:text-xl font-normal flex flex-col justify-end h-[200px]">
+              <div className="bg-purple-600 text-white text-sm p-2 lg:p-8 md:text-xl sm:text-xl font-normal flex flex-col justify-end h-[200px]">
                 <p>Buid your own Dashboard</p>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-0">
               <div></div>
-              <div className="bg-purple-400 text-gray-800 text-sm p-2 lg:p-8 lg:text-xl font-normal flex flex-col justify-end h-[200px]">
+              <div className="bg-purple-600 text-white text-sm p-2 lg:p-8 md:text-xl sm:text-xl font-normal flex flex-col justify-end h-[200px]">
                 <p>Timely Maintenance</p>
               </div>
-              <div className="text-gray-800 text-sm p-2 lg:p-8 lg:text-xl font-normal flex flex-col justify-end h-[200px]">
+              <div className="text-gray-800 text-sm p-2 lg:p-8 md:text-xl sm:text-xl font-normal flex flex-col justify-end h-[200px]">
                 <p>Alerts and Notifications</p>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-0">
-              <div className="bg-purple-400 text-gray-800 text-sm p-4 lg:p-8 lg:text-xl font-light flex flex-col justify-end h-[200px]">
+              <div className="bg-purple-600 text-white text-sm p-4 lg:p-8 md:text-xl sm:text-xl font-light flex flex-col justify-end h-[200px]">
                 <p>Data Analysis and Patterns</p>
               </div>
-              <div className="text-gray-800 text-sm p-2 lg:p-8 lg:text-xl font-light flex flex-col justify-end h-[200px]">
+              <div className="text-gray-800 text-sm p-2 lg:p-8 md:text-xl sm:text-xl font-normal flex flex-col justify-end h-[200px]">
                 <p>Bring your own Device</p>
               </div>
-              <div className="bg-gray-800 text-white text-sm p-2 lg:p-8 lg:text-xl font-light flex flex-col justify-end h-[200px]">
+              <div className="bg-gray-800 text-white text-sm p-2 lg:p-8 md:text-xl sm:text-xl font-light flex flex-col justify-end h-[200px]">
                 <p>Knowledge Base Builder</p>
               </div>
             </div>

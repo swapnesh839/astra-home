@@ -112,7 +112,7 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section className="pb-20" id="Usecases">
+    <section className="pb-20 " id="Usecases">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-1 pb-14 mx-auto">
           <h2 className="w-full text-center lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
@@ -165,7 +165,7 @@ const UseCases = () => {
             </Carousel>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-0 lg:px-72 md:px-20 sm:px-0 px-0 pt-20">
+        <div className=" px-0 pt-20">
           <div className="lg:flex md:flex flex justify-between items-end py-14 border-t border-b border-gray-500">
             <div>
               <p className="text-base font-light mb-2">More than</p>
@@ -175,8 +175,8 @@ const UseCases = () => {
               </div>
               <p className="text-base font-light mb-2">Sites being monitored</p>
               <MdOutlineArrowOutward className="text-3xl font-light" />
-            </div>
             <p className="text-3xl">Trust us</p>
+            </div>
           </div>
         </div>
       </div>
