@@ -134,7 +134,7 @@ const PrevArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className="hover:bg-amber-500 bg-amber-400 "
+      className="hover:bg-purple-500 bg-purple-400 "
       style={{ display: "block", zIndex: 1, left: "20px", transform: "translateY(-50%)", top: "50%", cursor: "pointer", position: "absolute", borderRadius: "50%", padding: "5px" }}
       onClick={onClick}
     >
@@ -147,7 +147,7 @@ const NextArrow = (props: any) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className="hover:bg-amber-500 bg-amber-400 "
+      className="hover:bg-purple-500 bg-purple-400 "
       style={{ display: "block", zIndex: 1, right: "20px", transform: "translateY(-50%)", top: "50%", cursor: "pointer", position: "absolute", borderRadius: "50%", padding: "5px" }}
       onClick={onClick}
     >

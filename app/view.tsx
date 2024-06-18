@@ -16,7 +16,7 @@ const ViewPage = () => {
             <Banner />
             <HealthyMachines />
             <TrustedCustomer />
-            <Testimonial/>
+            {/* <Testimonial/> */}
             <Businesses />
             <GivingYouTime />
             <WordsFromOurCustomers />
