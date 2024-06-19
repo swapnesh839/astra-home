@@ -65,7 +65,7 @@ const Testimonial = () => {
   };
   
   return (
-    <div className='w-ful py-20'>
+    <div className='container mx-auto py-20'>
       <div className='p-6 px-9 w-full'>
         <Slider {...settings}>
           {

@@ -4,11 +4,11 @@ import { MdDone } from "react-icons/md";
 
 const Banner = () => {
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-gray-100 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-1">
           <div className="lg:col-span-9 col-span-12">
-            <h1 className="w-full lg:text-7xl md:text-5xl text-5xl font-light !leading-[60px]">
+            <h1 style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">
               Automate post sales workflows, processes
               <br className="hidden lg:block md:hidden sm:hidden" /> and tasks
             </h1>

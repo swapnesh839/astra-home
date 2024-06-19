@@ -61,9 +61,9 @@ const TrustedCustomer = () => {
     ]
   };
   return (
-    <div className='w-ful py-28 bg-[#F3F4F6]'>
+    <div className='w-ful py-28 container mx-auto'>
       <div className="grid grid-cols-1 text-center mb-14">
-        <h2 className="w-full lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
+        <h2 style={{fontSize:"60px"}}  className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">
           Trusted Customers
         </h2>
       </div>

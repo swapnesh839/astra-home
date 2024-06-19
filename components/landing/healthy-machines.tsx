@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const HealthyMachines = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-4 my-11">
           <div className="lg:col-span-5 col-span-12">
-            <h2 className="w-full lg:text-6xl text-5xl font-light !leading-[60px]">
+            <h2 style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">
               Healthy Machines Create Profitable Business
             </h2>
             <p className="py-14 lg:text-xl text-sm md:text-lg sm:text-lg font-normal leading-normal">

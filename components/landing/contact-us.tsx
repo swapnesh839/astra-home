@@ -3,11 +3,11 @@ import ContactForm from "./contact-form";
 
 const ContactUs = () => {
   return (
-    <section className="py-14 pb-20 bg-[#FFFFFF]">
+    <section className="py-14 pb-20 container mx-auto bg-[#FFFFFF]">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
           <div className="">
-            <h3 className="w-full lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
+            <h3 style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">
               Contact Us
             </h3>
             <h4 className="text-lg lg:text-lg font-normal text-purple-500 py-11">

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Metrophobic } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navbar/navigation";
 import Footer from "@/components/footer/footer";
 import ScrollToTopButton from "@/components/landing/scroll-to-top-button";
 
 const inter = Inter({ subsets: ["latin"] });
+const metrophobic = Metrophobic({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Starlly",
@@ -19,9 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet" />
+      </head>
+      <body style={{fontFamily:"Metrophobic"}} suppressHydrationWarning={true}>
         <Navigation />
-        <main>
+        <main >
           {children}
         </main>
         <Footer />

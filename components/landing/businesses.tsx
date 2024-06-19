@@ -24,23 +24,28 @@ const buttons = [
 
 const Businesses = () => {
   return (
-    <section className="bg-[#031229] py-20">
+    <section className="bg-[#031229] py-20 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-11">
-          <div>
-            <Image
+            <div className="flex flex-wrap justify-center align-middle p-2">
+              {buttons.map((index) => (
+                <div key={index.label} className="w-6/12 mx-auto my-7 px-2 flex">
+                  <Button key={index.label} className="bg-orange-400 w-5/6 m-auto text-black transtion ease-in-out duration-500 rounded-full hover:bg-white">{index.label}</Button>
+                </div>
+              ))}
+            {/* <Image
               src="/img/business_img.svg"
               width={300}
               height={300}
               alt="Picture of the author"
               className="w-full h-[500px]"
-            />
+            /> */}
           </div>
           <div className="text-[#FFFFFF]">
             <h3 className="w-full lg:text-6xl text-5xl font-normal !leading-[60px]">
               Businesses should be on everytime
             </h3>
-            <p className="py-11">
+            <p className="pt-11 ">
               Humans should be making decisions and not dumb work every time,
               making decision needs relevant data points. For us an Ideal
               Customer is someone who wants to run their operations or
@@ -48,18 +53,7 @@ const Businesses = () => {
               experience as if a head or a lead is talking to them even in their
               absence.
             </p>
-            <div className="lg:inline-block hidden">
-              {buttons.map((index) => (
-                <Button key={index.label} className="w-[185px] me-3 mb-3 px-5 py-2 bg-orange-400 text-black mx-auto transtion ease-in-out duration-500 rounded-full hover:bg-white">{index.label}</Button>
-              ))}
-            </div>
-            <div className="lg:hidden flex flex-col p-3">
-              {/* <div className="m-auto bg-blue-500 "> */}
-              {buttons.map((index) => (
-                <Button key={index.label} className="w-2/3 mb-3  bg-orange-400 text-black mx-auto transtion ease-in-out duration-500 rounded-full hover:bg-white">{index.label}</Button>
-              ))}
-              {/* </div> */}
-            </div>
+
           </div>
         </div>
       </div>

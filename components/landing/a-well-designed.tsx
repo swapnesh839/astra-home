@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AWellDesigned = () => {
   return (
-    <section className="py-14 bg-[#FFFFFF]">
+    <section className="py-14 container mx-auto bg-[#FFFFFF]">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-24">
           <div className="">
@@ -29,7 +29,7 @@ const AWellDesigned = () => {
             </div>
           </div>
           <div className="">
-            <h2 className="lg:text-5xl text-4xl font-normal !leading-[50px] text-gray-700">
+            <h2 style={{fontSize:"60px"}} className="lg:text-6xl md:text-4xl text-4xl !leading-[50px] text-gray-700">
               A well designed solution to cater the needs of maintenance and
               services teams, to gain time and productivity
             </h2>

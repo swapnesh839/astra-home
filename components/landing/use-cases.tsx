@@ -43,9 +43,9 @@ const useCases = [
     hiddenText: (
       <span>
         Power consumption , report generation, issue tracking - site wise became
-        easy and saved time for the teammembers involved <br /> <br />
+        easy and saved time for the teammembers involved <br /> 
         Adding multiple sites and machines is now handled by the team head, the
-        setup is easy and can be done by anyone <br /> <br />
+        setup is easy and can be done by anyone <br /> 
         Analysis and reports proved beneficial for the teams to spot the caveats
         in wastage/spoil
       </span>
@@ -112,10 +112,10 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section className="pb-20 " id="Usecases">
+    <section className="pb-20 container mx-auto" id="Usecases">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-1 pb-14 mx-auto">
-          <h2 className="w-full text-center lg:text-5xl md:text-3xl sm:text-2xl text-xl font-normal !leading-[60px]">
+          <h2  style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
             Use Cases
           </h2>
         </div>
@@ -175,7 +175,7 @@ const UseCases = () => {
               </div>
               <p className="text-base font-light mb-2">Sites being monitored</p>
               <MdOutlineArrowOutward className="text-3xl font-light" />
-            <p className="text-3xl">Trust us</p>
+            {/* <p className="text-3xl">Our Customer Trust us</p> */}
             </div>
           </div>
         </div>

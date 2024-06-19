@@ -1,13 +1,13 @@
 const GivingYouTime = () => {
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-gray-100 py-20 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
           <div className="">
             <p className="text-purple-600 font-semibold">
               GIVING YOU TIME TO FOCUS ON THE REST
             </p>
-            <h2 className="py-11 md:text-6xl text-5xl font-normal !leading-[60px] text-gray-700">
+            <h2 style={{fontSize:"60px"}}  className="py-11 lg:text-6xl md:text-4xl text-4xl !leading-[60px] text-gray-700">
               Better maintenance, flexible solution with robust data insight
             </h2>
             <p className="font-normal text-gray-700 text-base lg:text-lg tracking-wider pb-11">
