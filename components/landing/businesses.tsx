@@ -43,7 +43,7 @@ const Businesses = () => {
           </div>
           <div className="text-[#FFFFFF]">
             <h3 className="w-full lg:text-6xl text-5xl font-normal !leading-[60px]">
-              Businesses should be on everytime
+              Businesses should be ON everytime
             </h3>
             <p className="pt-11 ">
               Humans should be making decisions and not dumb work every time,

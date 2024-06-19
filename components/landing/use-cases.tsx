@@ -115,7 +115,7 @@ const UseCases = () => {
     <section className="pb-20 container mx-auto" id="Usecases">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-1 pb-14 mx-auto">
-          <h2  style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
+          <h2  style={{fontSize:"56px"}} className="w-full text-center lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
             Use Cases
           </h2>
         </div>

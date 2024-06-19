@@ -3,6 +3,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+
+
 import {
   Form,
   FormControl,
@@ -12,6 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
+import { useState } from "react";
 
 const FormSchema = z.object({
   businessName: z.string().min(2, {
@@ -31,6 +34,7 @@ const FormSchema = z.object({
 });
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false)
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -43,9 +47,40 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log(data);
-  }
+  // function onSubmit(data: z.infer<typeof FormSchema>) {
+  //   console.log(data);
+  // }
+  const onSubmit = async (data: z.infer<typeof FormSchema>) => {
+    setLoading(true);
+    try {
+      const response = await fetch('../../app/php/mail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (response.ok) {
+        const responseData = await response.json();
+        if (responseData.status === 'success') {
+          alert('Email sent successfully');
+        } else {
+          alert('Failed to send email');
+        }
+      } else {
+        alert('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email');
+    }
+    finally{
+      form.reset();
+      setLoading(false);
+    }
+  };
+  
 
   return (
     <section className="">
@@ -178,6 +213,7 @@ const ContactForm = () => {
               >
                 Submit Enquiry
               </Button>
+              {loading ? 'Submitting...' : ''}
             </form>
           </Form>
         </div>

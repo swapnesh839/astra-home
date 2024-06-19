@@ -44,7 +44,7 @@ const Pricing = () => {
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
-                  {show ? "Support availability" : ""}
+                  {"Support availability"}
                 </div>
                 <div className="flex py-4">
                   <Image
@@ -52,7 +52,7 @@ const Pricing = () => {
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
-                  {show ? "Setup help available" : ""}
+                  {"Setup help available" }
                 </div>
                 <div className="flex py-4">
                   <Image
@@ -60,7 +60,7 @@ const Pricing = () => {
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
-                  {show ? "Consultant expertise available" : ""}
+                  {"Consultant expertise available" }
                 </div>
                 <div className="flex py-4">
                   <Image
@@ -68,7 +68,7 @@ const Pricing = () => {
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
                   />
-                  {show ? "Weekly Status calls (charges extra)" : ""}
+                  {"Weekly Status calls (charges extra)"}
                 </div>
               </div>
             </div>
