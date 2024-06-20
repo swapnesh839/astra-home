@@ -28,8 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
              . "<div>Requirement: {$data['requirement']}</div>";
 
     // Email Headers
-    $headers = 'From: hello@starllysolutions.com' . "\r\n" .
-               'Reply-To: hello@starllysolutions.com' . "\r\n" .
+    $headers = 'From:hello@starllysolutions.com' . "\r\n" .
+               'Reply-To:hello@starllysolutions.com' . "\r\n" .
                'X-Mailer: PHP/' . phpversion() . "\r\n" .
                'Content-type: text/html; charset=utf-8';
 

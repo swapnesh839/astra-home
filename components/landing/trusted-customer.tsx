@@ -4,6 +4,9 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import logo1 from "../../public/img/logo-1.png"
+import logo2 from "../../public//img/logo-2.png"
+import logo3 from "../../public//img/logo-3.png"
 import "slick-carousel/slick/slick-theme.css";
 import {
   Carousel,
@@ -16,15 +19,15 @@ import {
 const logosImg = [
   {
     id: 0,
-    logos: "/img/logo-1.png",
+    logos: logo1,
   },
   {
     id: 1,
-    logos: "/img/logo-2.png",
+    logos: logo2,
   },
   {
     id: 2,
-    logos: "/img/logo-3.png",
+    logos:logo3,
   }
   // ,
   // {

@@ -14,7 +14,8 @@ const HealthyMachines = () => {
               Simple plug n play solution to monitor your machines remotely in real time, send alert to the right team members
             </p>
             <Link
-              href="/#form"
+              target="_blank"
+              href="/TryIt"
               className="cursor-pointer border-2 font-bold text-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-purple-600 hover:text-white"
             >
               Try It Now
@@ -29,9 +30,9 @@ const HealthyMachines = () => {
                 controls
                 preload="none"
               >
-                <source src="/img/spectra-Bqo.mp4" type="video/mp4" />
+                <source src="/newstarlly/img/spectra-Bqo.mp4" type="video/mp4" />
                 <track
-                  src="/img/spectra-Bqo.mp4"
+                  src="/newstarlly/img/spectra-Bqo.mp4"
                   kind="subtitles"
                   srcLang="en"
                   label="English"

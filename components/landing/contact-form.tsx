@@ -28,7 +28,7 @@ const FormSchema = z.object({
   yourTitle: z.string().min(2, {
     message: "Your Title must be at least 2 characters.",
   }),
-  requirement:z.string().min(2, {
+  requirement: z.string().min(2, {
     message: "Requirement must be at least 2 characters.",
   }),
 });
@@ -39,11 +39,11 @@ const ContactForm = () => {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       businessName: "",
-      fullName:"",
-      email:"",
-      phone:"",
-      yourTitle:"",
-      requirement:""
+      fullName: "",
+      email: "",
+      phone: "",
+      yourTitle: "",
+      requirement: ""
     },
   });
 
@@ -52,35 +52,50 @@ const ContactForm = () => {
   // }
   const onSubmit = async (data: z.infer<typeof FormSchema>) => {
     setLoading(true);
+    // businessName: "",
+    //   fullName:"",
+    //   email:"",
+    //   phone:"",
+    //   yourTitle:"",
+    //   requirement:""
+
+    const formData = new FormData();
+    formData.append("firstName", data.fullName);
+    // formData.append("lastName", "");
+    formData.append("email", data.email);
+    formData.append("phone", data.phone);
+    formData.append("title", data.yourTitle);
+    formData.append("companyName", data.businessName);
+    formData.append("query", data.requirement || "");
     try {
-      const response = await fetch('../../app/php/mail.php', {
+      const response = await fetch('https://servybackdev.starlly.in/api/leads/leadCustomer/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+        // headers: {
+        //   'Content-Type': 'multipart/form-data',
+        // },
+        body: formData,
       });
-  
+
       if (response.ok) {
         const responseData = await response.json();
         if (responseData.status === 'success') {
-          alert('Email sent successfully');
+          alert('Successfully Submited');
         } else {
-          alert('Failed to send email');
+          alert('Error while Submitting try later');
         }
       } else {
-        alert('Failed to send email');
+        alert('Error while Submitting try later');
       }
+      alert('Error while Submitting try later');
     } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email');
+      console.error('Error while Submitting try later:', error);
     }
-    finally{
-      form.reset();
+    finally {
       setLoading(false);
+      form.reset();
     }
   };
-  
+
 
   return (
     <section className="">
@@ -217,7 +232,7 @@ const ContactForm = () => {
             </form>
           </Form>
         </div>
-      </div>      
+      </div>
     </section>
   );
 };

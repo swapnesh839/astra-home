@@ -1,4 +1,5 @@
 import Image from "next/image";
+import img from "../../public/img/a_well.svg"
 
 const AWellDesigned = () => {
   return (
@@ -7,7 +8,7 @@ const AWellDesigned = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-24">
           <div className="">
             <Image
-              src="/img/a_well.svg"
+              src={img}
               width={300}
               height={300}
               alt="Picture of the author"

@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
-import check from "../../public/img/check.png"
+import check from "../../public/img/check.png"; 
 const Pricing = () => {
   const [show, setShow] = useState(true)
   return (
@@ -41,35 +41,44 @@ const Pricing = () => {
                 <div className="flex py-4">
                   <Image
                     src={check}
+                    // src="/img/check.png"
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
+                  width={10}
+                  height={10}
                   />
                   {"Support availability"}
                 </div>
                 <div className="flex py-4">
                   <Image
-                    src={check}
-                    alt="check"
-                    className="w-8 h-8 mr-5 text-green-600"
+                  height={10}
+                  src={check}
+                  alt="check"
+                  width={10}
+                  className="w-8 h-8 mr-5 text-green-600"
                   />
                   {"Setup help available" }
                 </div>
                 <div className="flex py-4">
                   <Image
-                    src={check}
-                    alt="check"
-                    className="w-8 h-8 mr-5 text-green-600"
+                  height={10}
+                  width={10}
+                  alt="check"
+                  src={check}
+                  className="w-8 h-8 mr-5 text-green-600"
                   />
                   {"Consultant expertise available" }
                 </div>
-                <div className="flex py-4">
+                {!show&&<div className="flex py-4">
                   <Image
+                    width={10}
+                    height={10}
                     src={check}
                     alt="check"
                     className="w-8 h-8 mr-5 text-green-600"
-                  />
+                    />
                   {"Weekly Status calls (charges extra)"}
-                </div>
+                </div>}
               </div>
             </div>
           </div>

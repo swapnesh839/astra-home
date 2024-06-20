@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactForm from "./contact-form";
+import img from "../../public/img/contact.png"
 
 const ContactUs = () => {
   return (
@@ -20,7 +21,7 @@ const ContactUs = () => {
               company.
             </p>
             <Image
-              src="/img/contact.png"
+              src={img}
               width={300}
               height={250}
               alt="Picture of the author"
