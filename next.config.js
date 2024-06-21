@@ -2,9 +2,9 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  // compiler: {
-  //   removeConsole: true,
-  // },
+  compiler: {
+    removeConsole: true,
+  },
   // basePath: '/newstarlly',
   // assetPrefix: '/newstarlly/',
   images: {
