@@ -29,9 +29,9 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
     };
   }, []);
   const Menu = [
-    { id: 0, name: "Features", url: "#Features" },
-    { id: 1, name: "Usecases", url: "#Usecases" },
-    { id: 2, name: "Pricing", url: "#Pricing" },
+    { id: 0, name: "Features", url: "/#Features" },
+    { id: 1, name: "Usecases", url: "/#Usecases" },
+    { id: 2, name: "Pricing", url: "/#Pricing" },
     {
       id: 3, name: "Solutions", url: "", innersection: [
         { id: 0, name: " Workflow Management For Machines", url: "/Workflow" },
