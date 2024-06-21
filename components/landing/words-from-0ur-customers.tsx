@@ -139,7 +139,7 @@ const Slider = [
       <div className="border rounded-full border-gray-500 p-2 w-[40px] h-[40px] flex justify-center items-center mb-2"><a href=""> 6</a> </div>
       <div className="border rounded-full border-purple-700 text-purple-700 p-2 w-[40px] h-[40px] flex justify-center items-center mb-2"><a href=""> 7</a> </div>
     </div>,
-    lable: <span>Workflows and Insightsr</span>,
+    lable: <span>Workflows and Insights</span>,
     // sublable: "Spare parts arrive on site faster.",
     utlits: <ul>
       <li>Workflow Automation </li>

@@ -8,6 +8,7 @@ import HealthyMachines from "@/components/landing/healthy-machines";
 import Pricing from "@/components/landing/pricing";
 import TrustedCustomer from "@/components/landing/trusted-customer";
 import UseCases from "@/components/landing/use-cases";
+import Signup from "@/components/landing/signupform";
 import WordsFromOurCustomers from "@/components/landing/words-from-0ur-customers";
 
 const ViewPage = () => {
@@ -20,6 +21,7 @@ const ViewPage = () => {
             <Businesses />
             <GivingYouTime />
             <WordsFromOurCustomers />
+            {/* <Signup/> */}
             <UseCases />
             <AWellDesigned />
             <ContactUs />

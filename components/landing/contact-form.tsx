@@ -24,7 +24,7 @@ const FormSchema = z.object({
     message: "full Name must be at least 2 characters.",
   }),
   email: z.string({ required_error: "Email is required" }).min(1, { message: "Email is required" }).email("Invalid email"),
-  phone: z.string({ required_error: "Invalid number", }).min(10, { message: 'Phone Number should contain 10 digit' }),
+  phone: z.string({ required_error: "Invalid number", }).min(10, { message: 'Phone Number should contain 10 digit' }).max(10, { message: 'Phone Number should contain 10 digit only' }),
   yourTitle: z.string().min(2, {
     message: "Your Title must be at least 2 characters.",
   }),
@@ -63,6 +63,7 @@ const ContactForm = () => {
     formData.append("firstName", data.fullName);
     // formData.append("lastName", "");
     formData.append("email", data.email);
+    formData.append("product", "Spectra");
     formData.append("phone", data.phone);
     formData.append("title", data.yourTitle);
     formData.append("companyName", data.businessName);
@@ -75,19 +76,10 @@ const ContactForm = () => {
         // },
         body: formData,
       });
-
-      if (response.ok) {
-        const responseData = await response.json();
-        if (responseData.status === 'success') {
-          alert('Successfully Submited');
-        } else {
-          alert('Error while Submitting try later');
-        }
-      } else {
-        alert('Error while Submitting try later');
-      }
-      alert('Error while Submitting try later');
+      
+      alert('Successfully Submited');
     } catch (error) {
+      alert('Error while Submitting try later');
       console.error('Error while Submitting try later:', error);
     }
     finally {

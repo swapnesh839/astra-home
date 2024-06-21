@@ -4,7 +4,7 @@ import img from "../../public/img/contact.png"
 
 const ContactUs = () => {
   return (
-    <section className="py-14 pb-20 container mx-auto bg-[#FFFFFF]">
+    <section id="ContactUs" className="py-14 pb-20 container mx-auto bg-[#FFFFFF]">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
           <div className="">

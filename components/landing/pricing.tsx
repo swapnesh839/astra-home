@@ -69,7 +69,7 @@ const Pricing = () => {
                   />
                   {"Consultant expertise available" }
                 </div>
-                {!show&&<div className="flex py-4">
+                {show&&<div className="flex py-4">
                   <Image
                     width={10}
                     height={10}

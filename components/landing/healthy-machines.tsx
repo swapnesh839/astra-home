@@ -28,11 +28,11 @@ const HealthyMachines = () => {
                 height="240"
                 className="w-full h-full"
                 controls
-                preload="none"
+                // preload="none"
               >
-                <source src="/newstarlly/img/spectra-Bqo.mp4" type="video/mp4" />
+                <source src="/img/spectra-Bqo.mp4"  type="video/mp4" />
                 <track
-                  src="/newstarlly/img/spectra-Bqo.mp4"
+                  src="/img/spectra-Bqo.mp4"
                   kind="subtitles"
                   srcLang="en"
                   label="English"
