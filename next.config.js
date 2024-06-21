@@ -6,7 +6,7 @@ const nextConfig = {
     removeConsole: true,
   },
   // basePath: '/newstarlly',
-  assetPrefix: '/newstarlly/',
+  // assetPrefix: '/newstarlly/',
   images: {
     unoptimized: true,
   },
