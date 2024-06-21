@@ -21,7 +21,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  
+
   useEffect(() => {
     window.addEventListener("scroll", changeNavButton);
     return () => {
@@ -77,10 +77,10 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     <div key={i.id} className="relative inline-block text-left">
                       <div>
                         <button type="button" onClick={toggleMenu} className="inline-flex w-full justify-center" id="menu-button" aria-expanded="true" aria-haspopup="true">
-                          <p  className="hover:text-purple-700">{i.name}</p>
-                          <svg 
-                          className={`-mr-1 h-5 w-5 text-gray-400 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
-                           viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <p className="hover:text-purple-700">{i.name}</p>
+                          <svg
+                            className={`-mr-1 h-5 w-5 text-gray-400 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}
+                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             {isOpen ? (
                               <path
                                 fillRule="evenodd"
@@ -97,9 +97,9 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                           </svg>
                         </button>
                       </div>
-                      {isOpen && <div 
-                       className={`absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-                       role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
+                      {isOpen && <div
+                        className={`absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-1000 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
                         <div className="py-1" role="none">
                           {
                             i.innersection.map((d) =>

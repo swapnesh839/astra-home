@@ -23,11 +23,11 @@ const page = () => {
                             className="me-auto w-full h-full border-purple-700 rounded border-2 "
                         />
                     </div>
-                    <div className="mx-auto px-10 mb-5 flex flex-col">
+                    <div className="mx-auto mb-5 flex flex-col sm:mt-4 p-5">
                         {/* <h2 style={{ fontSize: "56px" }} className="w-full text-center lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
                             Workflow Section
                         </h2> */}
-                        <p className="lg:text-xl text-sm md:text-lg sm:text-lg font-normal text-start leading-normal" style={{ fontSize: "22px" }}>
+                        <p className="lg:text-2xl text-sm md:text-2xl sm:text-lg font-normal text-start leading-normal">
                             You have business, and then you have to take care of those never ending list of activities. A well oiled business helps its owners, employees and customers to get most out of the product/solution/services being offered.
                             To make it easy for teams to handle post sales/deployment focused activities. <br /> We at Spectra are allowing customers to build their own workflows/processes/templates in an easy manner.
                             Our intention is to make work easy for Operations-Maintenance-Services teams.

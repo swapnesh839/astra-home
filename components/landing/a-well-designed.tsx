@@ -30,7 +30,7 @@ const AWellDesigned = () => {
             </div>
           </div>
           <div className="">
-            <h2 style={{fontSize:"60px"}} className="lg:text-6xl md:text-4xl text-4xl !leading-[50px] text-gray-700">
+            <h2 className="lg:text-6xl md:text-4xl text-4xl text-gray-700">
               A well designed solution to cater the needs of maintenance and
               services teams, to gain time and productivity
             </h2>

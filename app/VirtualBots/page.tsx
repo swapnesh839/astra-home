@@ -20,11 +20,11 @@ const page = () => {
                             className="me-auto w-full h-full border-purple-700 rounded border-2 "
                         />
                     </div>
-                    <div className="mx-auto px-10 mb-5 flex flex-col">
+                    <div className="mx-auto mb-5 flex flex-col sm:mt-4 p-5">
                         {/* <h2 style={{ fontSize: "56px" }} className="w-full text-center lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
                             Workflow Section
                         </h2> */}
-                        <p className="lg:text-xl text-sm md:text-lg sm:text-lg font-normal text-start leading-normal" style={{ fontSize: "22px" }}>
+                        <p className="lg:text-2xl text-sm md:text-2xl sm:text-lg font-normal text-start leading-normal">
                             Precaution is better than cure.
                             Give yourself that complete ownership and authority of running the post sales/deployment related activities without any doubts.
                             Allow the Spectra virtual bot to keep you well informed on all the valuable insights, whenever its needed, ask it and it shall answer all the information without you even moving a finger.

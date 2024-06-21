@@ -26,7 +26,7 @@ const Pricing = () => {
               </span>
             </label>
           </div>
-          <div className="w-[90%] lg:w-[60%] mx-auto">
+          <div className="w-[100%] lg:w-[60%] mx-auto">
             <div className="bg-[#FFFFFF] text-slate-900 m-4 p-4 lg:p-8 rounded-xl relative col-start-3 col-span-2">
               <div className=" ">
                 <p className="text-4xl font-medium py-4 flex justify-center">

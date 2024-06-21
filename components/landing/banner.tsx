@@ -9,7 +9,9 @@ const Banner = () => {
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-1">
           <div className="lg:col-span-9 col-span-12">
-            <h1 style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">
+            <h1 
+            // style={{fontSize:"60px"}} 
+            className="w-full lg:text-6xl md:text-4xl text-4xl ">
               Automate post sales workflows, processes
               <br className="hidden lg:block md:hidden sm:hidden" /> and tasks
             </h1>
