@@ -38,6 +38,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         { id: 1, name: "Preventive info/Virtual Bots", url: "/VirtualBots" },
       ]
     },
+    { id: 4, name: "Partner", url: "/Partner" },
   ]
   return (
     <>

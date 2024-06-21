@@ -7,7 +7,7 @@ const About = [
   // { id: 0, linkName: "Login", url: "/login" },
   { id: 1, linkName: "Company", url: "/company" },
   // { id: 2, linkName: "Carrer", url: "/carrer" },
-  { id: 3, linkName: "Partner", url: "/partner" },
+  { id: 3, linkName: "Partner", url: "/Partner" },
   { id: 4, linkName: "Contact", url: "/#ContactUs" },
 ];
 

@@ -31,15 +31,16 @@ const Sidebar = ({
   }, [isOpen, toggle]);
 
   const Menu = [
-    { id: 0, name: "Features", url: "#Features" },
-    { id: 1, name: "Usecases", url: "#Usecases" },
-    { id: 2, name: "Pricing", url: "#Pricing" },
+    { id: 0, name: "Features", url: "/#Features" },
+    { id: 1, name: "Usecases", url: "/#Usecases" },
+    { id: 2, name: "Pricing", url: "/#Pricing" },
     {
       id: 3, name: "Solutions", url: "", innersection: [
         { id: 0, name: " Workflow Management For Machines", url: "/Workflow" },
         { id: 1, name: "Preventive info/Virtual Bots", url: "/VirtualBots" },
       ]
     },
+    { id: 4, name: "Partner", url: "/Partner" },
   ]
   return (
     <>
