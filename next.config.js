@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
   trailingSlash: true,
-  // compiler: {
-  //   removeConsole: false,
-  // },
-  basePath: '/newstarlly',
+  compiler: {
+    removeConsole: true,
+  },
+  // basePath: '/newstarlly',
   assetPrefix: '/newstarlly/',
   images: {
     unoptimized: true,
