@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link";
+import axios from "axios"
 import { useState } from "react";
 import { FaFacebookSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -38,11 +39,95 @@ const SocialMedia = [
 
 
 const Footer = () => {
-  const [Email,setEmail] = useState<string>("")
-  const submit = (e:any)=>{
+  const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showExistingEmailError, setShowExistingEmailError] = useState(false);
+  const isValidEmail = (email: any) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    if (!isValidEmail(email)) {
+      setErrorMessage("Invalid email address");
+      setShowExistingEmailError(true);
+
+      // After 3 seconds (3000 milliseconds), hide the error message
+      setTimeout(() => {
+        setShowExistingEmailError(false);
+      }, 3000);
+
+      return;
+    }
+
+    try {
+      // Check if the email exists in the Airtable database
+      const response = await axios.get(
+        `https://api.airtable.com/v0/appDwI8UL4XREQrjo/Subscribers?filterByFormula=SEARCH("${email}", {Email})`,
+        {
+          headers: {
+            Authorization: `Bearer keyc11lgyUiUWVOPe`,
+          },
+        }
+      );
+
+      if (response.data.records.length > 0) {
+        setErrorMessage("Email already exists in the database");
+        setShowExistingEmailError(true);
+
+        // After 3 seconds (3000 milliseconds), hide the error message
+        setTimeout(() => {
+          setShowExistingEmailError(false);
+        }, 3000); // Adjust the duration as needed (3000ms = 3 seconds)    
+        return;
+      }
+
+      // Save the email to the Airtable database
+      await axios.post(
+        `https://api.airtable.com/v0/appDwI8UL4XREQrjo/Subscribers`,
+        {
+          records: [
+            {
+              fields: {
+                Email: email,
+              },
+            },
+          ],
+        },
+        {
+          headers: {
+            Authorization: `Bearer keyc11lgyUiUWVOPe`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      // Reset the email and error message after successful submission
+      setShowSuccessMessage(true);
+
+      // After 3 seconds (3000 milliseconds), hide the success message
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 3000);
+      setEmail("");
+      setErrorMessage("");
+    }
+    catch (error) {
+      setErrorMessage("An error occurred while saving the data");
+      setShowExistingEmailError(true);
+
+      // After 3 seconds (3000 milliseconds), hide the error message
+      setTimeout(() => {
+        setShowExistingEmailError(false);
+      }, 3000);
+    }
+  };
+  const submit = (e: any) => {
     e.preventDefault()
     console.log(e);
-    
+
   }
   return (
     <section className="w-full bg-gray-600 pt-14 pb-6">
@@ -60,14 +145,14 @@ const Footer = () => {
                     <br />
                     sent to yourinbox weekly.
                   </p>
-                  <form onSubmit={(e:any)=>submit(e)} className="flex flex-col sm:flex-row">
+                  <form onSubmit={(e: any) => submit(e)} className="flex flex-col sm:flex-row">
                     <input
                       className="w-auto p-2 mr-4 rounded-md mb-4 text-black focus:border-purple-600 focus:outline-none"
                       type="email"
+                      value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       // readOnly
                       placeholder="Enter email.."
-                      value={Email}
                     />
                     <button
                       type="submit"
@@ -100,7 +185,7 @@ const Footer = () => {
                 <p className="text-2xl mb-3 text-[#FFFFFF] font-medium">
                   Solutions
                 </p>
-                
+
                 <ul>
                   {Solutions.map((i) => (
                     <li key={i.id} className="mb-3">
@@ -133,7 +218,7 @@ const Footer = () => {
                 </ul>
               </div> */}
 
-              
+
               {/* <div className="">
                 <p className="text-2xl mb-3 text-[#FFFFFF] font-medium">
                   Resources
