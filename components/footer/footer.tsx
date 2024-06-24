@@ -10,6 +10,7 @@ const About = [
   // { id: 2, linkName: "Carrer", url: "/carrer" },
   { id: 3, linkName: "Partner", url: "/Partner" },
   { id: 4, linkName: "Contact", url: "/#ContactUs" },
+  { id: 5, linkName: "Newsletter", url: "https://spectra-2.ck.page/profile" },
 ];
 
 const Solutions = [
@@ -135,7 +136,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-5 border-b-2 border-gray-700 pb-5">
           <div>
             <div className="lg:flex md:block sm:block block justify-between">
-              <div>
+              {/* <div>
                 <div className="flex-1">
                   <p className="text-2xl mb-3 text-[#FFFFFF] font-medium">
                     Subscribe to our newsletter
@@ -162,7 +163,7 @@ const Footer = () => {
                     </button>
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div className="">
                 <p className="text-2xl mb-3 text-[#FFFFFF] font-medium">
                   About
