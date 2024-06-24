@@ -13,7 +13,7 @@ import WordsFromOurCustomers from "@/components/landing/words-from-0ur-customers
 
 const ViewPage = () => {
     return (
-        <div className="scroll-smooth">
+        <div className="scroll-smooth md:py-20 py-0">
             <Banner />
             <HealthyMachines />
             <TrustedCustomer />

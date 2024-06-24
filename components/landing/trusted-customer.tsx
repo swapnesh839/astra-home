@@ -64,7 +64,7 @@ const TrustedCustomer = () => {
     ]
   };
   return (
-    <div className='w-ful md:py-20 py-0 container mx-auto'>
+    <div className='md:container py-20 mx-auto'>
       <div className="grid grid-cols-1 text-center mb-14">
         <h2 className="w-full lg:text-6xl md:text-4xl text-4xl">
           Trusted Customers

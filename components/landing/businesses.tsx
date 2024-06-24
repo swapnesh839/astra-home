@@ -24,8 +24,8 @@ const buttons = [
 
 const Businesses = () => {
   return (
-    <section className="bg-[#031229] md:py-20 py-0 container mx-auto">
-      <div className="container mx-auto px-7 h-full">
+    <section className="bg-[#031229] py-20 container mx-auto">
+      <div className="mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-11">
             <div className="flex flex-wrap w-full justify-center align-middle p-2">
               {buttons.map((index) => (

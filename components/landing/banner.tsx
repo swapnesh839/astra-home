@@ -5,8 +5,8 @@ import img from "../../public/img/ninth-B-YVRdKi.jpeg"
 
 const Banner = () => {
   return (
-    <section className="md:py-20 py-0 bg-gray-100 container mx-auto">
-      <div className="container mx-auto px-7 h-full">
+    <section className="py-20 bg-gray-100 md:container mx-auto">
+      <div className="mx-auto px-7 h-full w-full p-2">
         <div className="grid grid-cols-12 gap-1">
           <div className="lg:col-span-9 col-span-12">
             <h1 
@@ -55,7 +55,7 @@ const Banner = () => {
                 reliable.
               </span>
             </p>
-            <div className="flex gap-2 sm:mb-4 lg:gap-8 justify-center px-auto w-full lg:w-4/5 mt-5">
+            <div className="flex gap-2 mb-4 lg:gap-8 justify-center px-auto w-full lg:w-4/5 mt-5">
               <Link
               target="_blank"
                 href="/TryIt"

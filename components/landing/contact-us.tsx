@@ -4,8 +4,8 @@ import img from "../../public/img/contact.png"
 
 const ContactUs = () => {
   return (
-    <section id="ContactUs" className="md:py-20 py-0 pb-20 container mx-auto bg-[#FFFFFF]">
-      <div className="container mx-auto px-7 h-full">
+    <section id="ContactUs" className="py-20 md:container mx-auto bg-[#FFFFFF]">
+      <div className="mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
           <div className="">
             <h3 style={{fontSize:"60px"}} className="w-full lg:text-6xl md:text-4xl text-4xl !leading-[60px]">

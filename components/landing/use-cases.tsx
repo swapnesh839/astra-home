@@ -112,8 +112,8 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section className="md:py-20 py-0 container mx-auto" id="Usecases">
-      <div className="container mx-auto px-7 h-full">
+    <section className="md:container mx-auto py-20" id="Usecases">
+      <div className="mx-auto px-7 h-full">
         <div className="grid grid-cols-1 pb-14 mx-auto">
           <h2  style={{fontSize:"56px"}} className="w-full text-center lg:text-6xl md:text-4xl text-4xl font-normal !leading-[60px]">
             Use Cases

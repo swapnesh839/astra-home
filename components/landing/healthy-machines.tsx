@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const HealthyMachines = () => {
   return (
-    <section className="md:py-20 py-0 container mx-auto">
-      <div className="container mx-auto px-7 h-full">
+    <section className="md:container py-20 mx-auto">
+      <div className=" mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-4 my-11">
           <div className="lg:col-span-5 col-span-12">
             <h2 className="w-full lg:text-6xl md:text-4xl text-4xl">

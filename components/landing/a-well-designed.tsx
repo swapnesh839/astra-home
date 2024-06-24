@@ -3,8 +3,8 @@ import img from "../../public/img/a_well.svg"
 
 const AWellDesigned = () => {
   return (
-    <section className="md:py-20 py-0 container mx-auto bg-[#FFFFFF]">
-      <div className="container mx-auto px-7 h-full">
+    <section className="md:container mx-auto py-20 bg-[#FFFFFF]">
+      <div className="mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-24">
           <div className="">
             <Image
