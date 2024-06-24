@@ -21,6 +21,9 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const close = ()=>{
+    setIsOpen(false)
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavButton);
@@ -68,7 +71,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 if (!i?.innersection) {
                   return (
                     <li key={i.id}>
-                      <Link className="hover:text-purple-700 group" href={i.url} >
+                      <Link onClick={close} className="hover:text-purple-700 group" href={i.url} >
                         <p>{i.name}</p>
                       </Link>
                     </li>
@@ -105,7 +108,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                           {
                             i.innersection.map((d) =>
                             (
-                              <Link key={d.id} className="hover:text-purple-700 block px-4 py-2 text-sm group" href={d.url} >
+                              <Link onClick={close} key={d.id} className="hover:text-purple-700 block px-4 py-2 text-sm group" href={d.url} >
                                 <p>{d.name}</p>
                               </Link>
                             )

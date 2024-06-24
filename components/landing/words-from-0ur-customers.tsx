@@ -153,14 +153,14 @@ const Slider = [
 const WordsFromOurCustomers: React.FC = () => {
 
   return (
-    <section className="py-14 container mx-auto" id="Features">
+    <section className="md:py-20 py-0 container mx-auto" id="Features">
       <div className="container mx-auto px-7 mt-12 h-full">
         <h2 style={{fontSize:"60px"}} className="w-full mb-11 lg:text-6xl md:text-4xl text-4xl !leading-[60px] text-center">
           Features
         </h2>
-        <div className="flex flex-wrap justify-center align-middle">
+        <div className="flex flex-wrap md:justify-center sm:justify-start align-middle">
           {Slider.map((items, ind) => (
-            <div key={ind} className="lg:w-4/12 md:w-12/12 mb-4 p-5 flex">
+            <div key={ind} className="lg:w-4/12 w-full  mb-4 p-5 flex">
               <div className="w-full p-2 border border-purple-500 m-auto rounded-sm">
                 <div className="flex w-full p-2 justify-start">
                   <div className="flex" style={{fontSize:"20px",fontWeight:"500",lineHeight:"21px"}}>{<items.icon />} <span className="ms-2 ps-2">{items.lable}</span></div>

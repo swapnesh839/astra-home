@@ -1,6 +1,6 @@
 const GivingYouTime = () => {
   return (
-    <section className="bg-gray-100 py-20 container mx-auto">
+    <section className="bg-gray-100 md:py-20 py-0 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
           <div className="">

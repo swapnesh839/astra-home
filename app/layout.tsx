@@ -5,7 +5,10 @@ import Navigation from "@/components/navbar/navigation";
 import Head from "next/head"
 import Footer from "@/components/footer/footer";
 import { NextSeo } from "next-seo";
+
 import ScrollToTopButton from "@/components/landing/scroll-to-top-button";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,19 +27,11 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/img/spectra.jpeg',
+        url: "/img/spectra.jpeg",
         width: 800,
         height: 600,
-        alt: 'Og Image Alt',
+        alt: `spectra`,
       },
-      {
-        url: '/img/spectra.jpeg',
-        width: 900,
-        height: 800,
-        alt: 'Og Image Alt Second',
-      },
-      { url: '/img/spectra.jpeg' },
-      { url: '/img/spectra.jpeg' },
     ],
     siteName: 'spectra.starllysolutions',
   },
@@ -87,6 +82,9 @@ export default function RootLayout({
             siteName: 'spectra.starllysolutions'
           }}
         />
+        <meta property="og:image" content="/public/img/spectra.jpeg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet" />
@@ -113,7 +111,9 @@ export default function RootLayout({
       <body style={{ fontFamily: "Metrophobic" }} suppressHydrationWarning={true}>
         <Navigation />
         <main >
+        <Suspense fallback={<Loading />}>
           {children}
+          </Suspense>
         </main>
         <Footer />
         <ScrollToTopButton />

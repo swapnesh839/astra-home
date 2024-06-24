@@ -11,6 +11,9 @@ const Sidebar = ({
   toggle: () => void;
 }): JSX.Element => {
   const [isDropOpen, setisDropOpen] = useState(false);
+  const close = ()=>{
+    setisDropOpen(false)
+  }
 
   const toggleMenu = () => {
     setisDropOpen(!isDropOpen);
@@ -70,7 +73,7 @@ const Sidebar = ({
             if (!i?.innersection) {
               return (
                 <li key={i.id} className="my-3">
-                  <Link className="hover:text-purple-700 group" href={i.url}>
+                  <Link onClick={close} className="hover:text-purple-700 group" href={i.url}>
                     <p>{i.name}</p>
                   </Link>
                 </li>
@@ -120,7 +123,7 @@ const Sidebar = ({
                     >
                       <div className="py-1" role="none">
                         {i.innersection.map((d) => (
-                          <Link
+                          <Link onClick={close}
                             key={d.id}
                             className="hover:text-purple-700 block px-4 py-2 text-sm group"
                             href={d.url}

@@ -108,7 +108,7 @@ const SignupForm = () => {
         }
     };
     return (
-        <section className=" py-20 container mx-auto">
+        <section className=" md:py-20 py-0 container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-purple-800 text-white flex flex-col justify-center">
                     <div className="flex p-5 ">

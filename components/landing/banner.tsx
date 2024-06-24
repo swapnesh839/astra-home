@@ -5,7 +5,7 @@ import img from "../../public/img/ninth-B-YVRdKi.jpeg"
 
 const Banner = () => {
   return (
-    <section className="py-20 bg-gray-100 container mx-auto">
+    <section className="md:py-20 py-0 bg-gray-100 container mx-auto">
       <div className="container mx-auto px-7 h-full">
         <div className="grid grid-cols-12 gap-1">
           <div className="lg:col-span-9 col-span-12">
@@ -23,14 +23,14 @@ const Banner = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
-          <div className=" border-2 border-purple-700 rounded">
+          <div className=" border-2 border-purple-700 rounded md:h-[400px]">
             <Image
               src={img}
               // src="/img/ninth-B-YVRdKi.jpeg"
               width={300}
               height={300}
               alt="Picture of the author"
-              className="w-full h-[400px]"
+              className="w-full h-full"
             />
           </div>
           <div className="m-auto">
@@ -55,7 +55,7 @@ const Banner = () => {
                 reliable.
               </span>
             </p>
-            <div className="flex gap-2 lg:gap-8 justify-center px-auto w-full lg:w-4/5 mt-5">
+            <div className="flex gap-2 sm:mb-4 lg:gap-8 justify-center px-auto w-full lg:w-4/5 mt-5">
               <Link
               target="_blank"
                 href="/TryIt"
