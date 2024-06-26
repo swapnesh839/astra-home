@@ -35,7 +35,7 @@ const Banner = () => {
                 setModalType("signup")
                 openModal()
               }}
-                className="cursor-pointer border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold text-white bg-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-gray-200 hover:text-purple-600"
+                className="cursor-pointer px-5 border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold text-white bg-purple-600 lg:tracking-wider border-purple-600 py-1  lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-gray-200 hover:text-purple-600"
               >
                 Sign Up
               </span>
@@ -43,7 +43,7 @@ const Banner = () => {
                 setModalType("signIn")
                 openModal()
               }}
-                className="cursor-pointer border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold text-white bg-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-gray-200 hover:text-purple-600"
+                className="cursor-pointer px-5 border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold bg-white text-purple-600 lg:tracking-wider border-purple-600 py-1  lg:px-8 rounded-full transition ease-in-out duration-500 hover:text-gray-200 hover:bg-purple-600"
               >
                 Sign In
               </span>

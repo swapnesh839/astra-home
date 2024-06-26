@@ -1,6 +1,7 @@
 import React from 'react';
 import SignupForm from './landing/signupform';
 import { X } from 'lucide-react';
+import Login from './landing/login';
 
 interface ModalProps {
   isOpen: boolean;
@@ -21,6 +22,7 @@ const Formmodal: React.FC<ModalProps> = ({ isOpen, onClose, type }) => {
         <div className="bg-white rounded-lg shadow-xl transform transition-all w-full">
           <div>
             {type == "signup" && <SignupForm />}
+            {type != "signup" && <Login />}
           </div>
         </div>
       </div>

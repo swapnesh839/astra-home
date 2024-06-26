@@ -21,7 +21,7 @@ const ViewPage = () => {
             <Businesses />
             <GivingYouTime />
             <WordsFromOurCustomers />
-            <Signup/>
+            {/* <Signup/> */}
             <UseCases />
             <AWellDesigned />
             <ContactUs />
