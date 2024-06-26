@@ -3,7 +3,7 @@ const nextConfig = {
   // output: 'export',
   trailingSlash: true,
   compiler: {
-    removeConsole: true,
+    // removeConsole: true,
   },
   // basePath: '/newstarlly',
   // assetPrefix: '/newstarlly/',

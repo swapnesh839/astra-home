@@ -18,7 +18,7 @@ export const metadata = {
   title: 'spectra.starllysolutions',
   description: 'Automate post sales workflows, processes',
   icons: {
-    icon: '/spectra.ico', 
+    icon: '/spectra.ico',
   },
   openGraph: {
     title: 'Starlly',
@@ -52,14 +52,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       {true && <Head>
-      <link rel="icon" href="/spectra.ico" />
+        <link rel="icon" href="/spectra.ico" />
         <NextSeo
           title="spectra.starllysolutions"
           description="Automate post sales workflows, processes"
           canonical="https://spectra.starllysolutions.com/"
           openGraph={{
             url: 'https://www.url.ie/a',
-            title: 'Open Graph Title',
+            title: 'spectra.starllysolutions',
             description: 'Automate post sales workflows, processes',
             images: [
               {
@@ -73,7 +73,7 @@ export default function RootLayout({
                 url: '/public/img/spectra.jpeg',
                 width: 900,
                 height: 800,
-                alt: 'Og Image Alt Second',
+                alt: 'spectra.starllysolutions',
                 type: 'image/jpeg',
               },
               { url: '/public/img/spectra.jpeg' },
@@ -82,28 +82,29 @@ export default function RootLayout({
             siteName: 'spectra.starllysolutions'
           }}
         />
-        <meta property="og:image" content="/public/img/spectra.jpeg" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet" />
 
-        
+
 
         <meta
           name="description"
           content="Automate post sales workflows and processes with Starlly."
         />
+        <meta
+          property="og:image"
+          content="https://www.starllysolutions.com/img/services.png"
+        />
         {/* Open Graph meta tags */}
-        <meta property="og:title" content="Starlly" />
+        <meta property="og:title" content="spectra.starllysolutions" />
         <meta property="og:description" content="Automate post sales workflows, processes" />
-        <meta property="og:image" content="/public/img/spectra.jpeg" />
+        {/* <meta property="og:image" content="/public/img/spectra.jpeg" /> */}
         <meta property="og:url" content="https://spectra.starllysolutions.com/" />
         <meta property="og:type" content="website" />
         {/* Twitter meta tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Starlly" />
+        <meta name="twitter:card" content="spectra.starllysolutions" />
+        <meta name="twitter:title" content="spectra.starllysolutions" />
         <meta name="twitter:description" content="Automate post sales workflows, processes" />
         <meta name="twitter:image" content="/public/img/spectra.jpeg" />
 
@@ -111,8 +112,8 @@ export default function RootLayout({
       <body style={{ fontFamily: "Metrophobic" }} suppressHydrationWarning={true}>
         <Navigation />
         <main >
-        <Suspense fallback={<Loading />}>
-          {children}
+          <Suspense fallback={<Loading />}>
+            {children}
           </Suspense>
         </main>
         <Footer />

@@ -1,17 +1,26 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { MdDone } from "react-icons/md";
 import img from "../../public/img/ninth-B-YVRdKi.jpeg"
+import { Button } from "../ui/button";
+import Formmodal from "../Formmodal";
+import { useState } from "react";
 
 const Banner = () => {
+  const [modalType, setModalType] = useState("signup");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <section className="py-20 bg-gray-100 md:container mx-auto">
       <div className="mx-auto px-7 h-full w-full p-2">
         <div className="grid grid-cols-12 gap-1">
-          <div className="lg:col-span-9 col-span-12">
-            <h1 
-            // style={{fontSize:"60px"}} 
-            className="w-full lg:text-6xl md:text-4xl text-4xl ">
+          <div className="lg:col-span-8 col-span-12">
+            <h1
+              // style={{fontSize:"60px"}} 
+              className="w-full lg:text-6xl md:text-4xl text-4xl ">
               Automate post sales workflows, processes
               <br className="hidden lg:block md:hidden sm:hidden" /> and tasks
             </h1>
@@ -19,7 +28,27 @@ const Banner = () => {
               Keep Operations / Maintenance / Services team happy
             </p>
           </div>
-          <div className="lg:col-span-3 col-span-12"></div>
+          <div className="lg:col-span-4 col-span-12 flex">
+            <div className="flex w-full flex-col justify-center sm:m-7 m-auto align-middle ">
+
+              <span onClick={()=>{
+                setModalType("signup")
+                openModal()
+              }}
+                className="cursor-pointer border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold text-white bg-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-gray-200 hover:text-purple-600"
+              >
+                Sign Up
+              </span>
+              <span onClick={()=>{
+                setModalType("signIn")
+                openModal()
+              }}
+                className="cursor-pointer border-2 my-2 md:px-6 md:w-full inline-block text-center w-auto font-bold text-white bg-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-gray-200 hover:text-purple-600"
+              >
+                Sign In
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -57,7 +86,7 @@ const Banner = () => {
             </p>
             <div className="flex gap-2 mb-4 lg:gap-8 justify-center px-auto w-full lg:w-4/5 mt-5">
               <Link
-              target="_blank"
+                target="_blank"
                 href="/TryIt"
                 className="cursor-pointer border-2 font-bold text-purple-600 lg:tracking-wider border-purple-600 py-1 px-2 lg:px-8 rounded-full transition ease-in-out duration-500 hover:bg-purple-600 hover:text-white"
               >
@@ -81,6 +110,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <Formmodal isOpen={isModalOpen} onClose={closeModal} type={modalType} />
     </section>
   );
 };
