@@ -11,7 +11,7 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const metrophobic = Metrophobic({ weight: '400', subsets: ['latin'] });
 
 export const metadata = {
