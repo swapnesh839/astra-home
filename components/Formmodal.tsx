@@ -13,7 +13,7 @@ const Formmodal: React.FC<ModalProps> = ({ isOpen, onClose, type }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed top-0 left-0 overflow-auto hide-scrollbar inset-0 p-3 flex items-center justify-center z-50 w-full">
+    <div className="fixed top-0 left-0 overflow-auto hide-scrollbar inset-0 h-[100%] flex items-center justify-center z-[1200] w-full">
       <div className='h-full w-full bg-white relative'>
 
         <div  onClick={onClose} className='p-1 absolute text-xl bg-[#6B21A8] text-white right-[10px] top-[10px] z-[52] rounded-[50%] cursor-pointer' ><X/></div>

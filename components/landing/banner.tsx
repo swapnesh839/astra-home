@@ -29,7 +29,7 @@ const Banner = () => {
             </p>
           </div>
           <div className="lg:col-span-4 col-span-12 flex">
-            <div className="flex w-full flex-col justify-center sm:m-7 m-auto align-middle ">
+            {/* <div className="flex w-full flex-col justify-center sm:m-7 m-auto align-middle ">
 
               <span onClick={()=>{
                 setModalType("signup")
@@ -47,7 +47,7 @@ const Banner = () => {
               >
                 Sign In
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
 

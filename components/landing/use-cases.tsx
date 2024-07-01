@@ -1,5 +1,11 @@
 'use client'
 import React from "react";
+import chiller from "../../public/img/chiller.png" 
+import QSR from "../../public/img/qsr.png" 
+import Reefer from "../../public/img/reefer.png" 
+import Cold from "../../public/img/freezer (1).png" 
+import Vending from "../../public/img/vending-machine (1).png" 
+
 import {
   Carousel,
   CarouselContent,
@@ -19,7 +25,7 @@ const useCases = [
         Milk <br /> Chiller
       </span>
     ),
-    url: "https://assets-global.website-files.com/62d16206cfa17e1b469ab9b9/62e25eaf28e275626c8f7a0b_fb%20problems%201.svg",
+    url: chiller,
     p: "Real time alerts and dashboards quick setup gave teams better visibility of sites in shorter duration and milk freshness/health",
     hiddenText: (
       <span>
@@ -38,7 +44,7 @@ const useCases = [
         Cold <br /> Storage
       </span>
     ),
-    url: "https://assets-global.website-files.com/62d16206cfa17e1b469ab9b9/62e25eaf8e9523a54b5185fe_fb%20problems%202.svg",
+    url:Cold,
     p: "Parameter setup and monitoring temperature and door opened or closed status , these use cases were implemented easily with Spectra.",
     hiddenText: (
       <span>
@@ -58,7 +64,7 @@ const useCases = [
         Vending <br /> Machine
       </span>
     ),
-    url: "https://assets-global.website-files.com/62d16206cfa17e1b469ab9b9/62e25eaf28e275626c8f7a0b_fb%20problems%201.svg",
+    url: Vending,
     p: "Tracking of vehicles feature allowed the teams in planning for activities once delivery happens",
     hiddenText: (
       <span>
@@ -73,7 +79,7 @@ const useCases = [
   {
     id: 3,
     lable: "Reefer",
-    url: "https://assets-global.website-files.com/62d16206cfa17e1b469ab9b9/62e25eaf2650e6efb0122eba_fb%20problems%203.svg",
+    url: Reefer,
     p: "Vending machines are convenient and automated retail units that offer a wide range of products to consumers.",
     hiddenText: (
       <span>
@@ -92,7 +98,7 @@ const useCases = [
   {
     id: 4,
     lable: "QSR",
-    url: "https://assets-global.website-files.com/62d16206cfa17e1b469ab9b9/62e25eaf8e9523a54b5185fe_fb%20problems%202.svg",
+    url: QSR,
     p: 'QSR stands for "Quick Service Restaurant," a term used to describe a type of restaurant that provides fast and efficient service to customers.',
     hiddenText: (
       <span>
@@ -142,9 +148,9 @@ const UseCases = () => {
                           <Image
                             src={index.url}
                             width={46}
-                            height={96}
+                            height={46}
                             alt="Picture of the author"
-                            className="w-[46px] h-[96px]"
+                            className="w-[46px] h-[46px]"
                           />
                           <p className="text-lg font-light text-right pt-5 group-hover:text-purple-700">
                             {index.p}

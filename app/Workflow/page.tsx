@@ -34,7 +34,10 @@ const page = () => {
                             Check the utility, get an idea how you can arrange workflows/templates/recipes/itinerary.
                         </p>
                         <div className='h-7'></div>
-                        <a target='_blank' href='https://workflow-spectra.netlify.app/'
+                        <a 
+                        // target='_blank' 
+                        href='#'
+                        // href='https://workflow-spectra.netlify.app/'
                             className="bg-purple-500 hover:bg-purple-700 mt-5 text-white text-center m-auto font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         >
                             Utility

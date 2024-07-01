@@ -193,163 +193,181 @@ const SignupForm = () => {
                 <div className="px-12">
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                            <div className="grid grid-cols-1 gap-6">
-                                <FormField
-                                    control={form.control}
-                                    name="CompanyName"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>COMPANY NAME</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
-                                                    placeholder="Company Name"
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="AdminName"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>ADMIN NAME</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
-                                                    placeholder="Admin Name"
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="EmailAddress"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>EMAIL ADDRESS</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
-                                                    placeholder="Email Address"
-                                                    type="email"
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="PhoneNumber"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>PHONE NUMBER</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
-                                                    placeholder="Phone Number"
-                                                    type="tel"
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="Password"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>PASSWORD</FormLabel>
-                                            <FormControl>
-                                                <Input
-                                                    className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
-                                                    placeholder="Password"
-                                                    type="password"
-                                                    {...field}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="Titleoftheperson"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>TITLE OF THE PERSON</FormLabel>
-                                            <FormControl>
-                                                <Select
-                                                    {...field}
-                                                    options={titleOptions}
-                                                    classNamePrefix='react-select'
-                                                    value={titleOptions.find(option => option.value === field.value)}
-                                                    onChange={(selectedOption) => field.onChange(selectedOption?.value)}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <FormField
-                                    control={form.control}
-                                    name="Firmtype"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>FIRM TYPE</FormLabel>
-                                            <FormControl>
-                                                <Select
-                                                    {...field}
-                                                    options={firmTypes}
-                                                    classNamePrefix='react-select'
-                                                    value={firmTypes.find(option => option.value === field.value)}
-                                                    onChange={(selectedOption) => field.onChange(selectedOption?.value)}
-                                                />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-                                <Label htmlFor='Terms' className='fw-lighter'>
-                                    <Controller
-                                        name='AcceptTerms'
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                                <div className="col-span-12 ">
+                                    <FormField
                                         control={form.control}
-                                        rules={{
-                                            required: 'Please accept the Terms and Conditions',
-                                        }}
+                                        name="CompanyName"
                                         render={({ field }) => (
-                                            <input
-                                                {...field}
-                                                type='checkbox'
-                                                className="me-auto"
-                                                required
-                                                name='AcceptTerms'
-                                                value={field.value.toString()}
-                                            />
+                                            <FormItem>
+                                                <FormLabel>COMPANY NAME</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
+                                                        placeholder="Company Name"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
                                         )}
-
                                     />
-                                    {' '}
-                                    I accept the Terms and Conditions
-                                    <FormMessage />
-                                </Label>
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="AdminName"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>ADMIN NAME</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
+                                                        placeholder="Admin Name"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="EmailAddress"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>EMAIL ADDRESS</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
+                                                        placeholder="Email Address"
+                                                        type="email"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="PhoneNumber"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>PHONE NUMBER</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
+                                                        placeholder="Phone Number"
+                                                        type="tel"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="Password"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>PASSWORD</FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="bg-gray-200 text-gray-700 border focus:outline-none focus:bg-white h-11"
+                                                        placeholder="Password"
+                                                        type="password"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="Titleoftheperson"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>TITLE OF THE PERSON</FormLabel>
+                                                <FormControl>
+                                                    <Select
+                                                        {...field}
+                                                        options={titleOptions}
+                                                        classNamePrefix='react-select'
+                                                        value={titleOptions.find(option => option.value === field.value)}
+                                                        onChange={(selectedOption) => field.onChange(selectedOption?.value)}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 md:col-span-6">
+                                    <FormField
+                                        control={form.control}
+                                        name="Firmtype"
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormLabel>FIRM TYPE</FormLabel>
+                                                <FormControl>
+                                                    <Select
+                                                        {...field}
+                                                        options={firmTypes}
+                                                        classNamePrefix='react-select'
+                                                        value={firmTypes.find(option => option.value === field.value)}
+                                                        onChange={(selectedOption) => field.onChange(selectedOption?.value)}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div className="col-span-12 ">
+                                    <Label htmlFor='Terms' className='fw-lighter'>
+                                        <Controller
+                                            name='AcceptTerms'
+                                            control={form.control}
+                                            rules={{
+                                                required: 'Please accept the Terms and Conditions',
+                                            }}
+                                            render={({ field }) => (
+                                                <input
+                                                    {...field}
+                                                    type='checkbox'
+                                                    className="me-auto"
+                                                    required
+                                                    name='AcceptTerms'
+                                                    value={field.value.toString()}
+                                                />
+                                            )}
+
+                                        />
+                                        {' '}
+                                        I accept the Terms and Conditions
+                                        <FormMessage />
+                                    </Label>
+                                </div>
                             </div>
+                            <div className="flex">
                             <Button
                                 type="submit"
-                                className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                className="bg-purple-500 m-auto hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             >
                                 SIGNUP NOW
                             </Button>
+                            </div>
                             {loading && <p className="text-sm">Submitting...</p>}
                         </form>
                     </Form>

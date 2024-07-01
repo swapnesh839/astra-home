@@ -31,8 +31,8 @@ const Resources = [
 ];
 
 const SocialMedia = [
-  { id: 0, url: "", icon: <FaTwitter className="text-xl" /> },
-  { id: 1, url: "", icon: <FaLinkedin className="text-xl mx-5" /> },
+  { id: 0, url: "https://x.com/sayhitospectra", icon: <FaTwitter className="text-xl" /> },
+  { id: 1, url: "https://www.linkedin.com/company/starlly-solutions-pvt.-ltd.", icon: <FaLinkedin className="text-xl mx-5" /> },
   { id: 2, url: "", icon: <FaFacebookSquare className="text-xl" /> }
 ];
 
